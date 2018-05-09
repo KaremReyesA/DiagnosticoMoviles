@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar  color="dark">
+    <ion-title>
+       {{ item.nombre }}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  
+  <img [src]="item.img">
+  
+  <h2> {{ item.nombre }} </h2>
+  <p> {{ item.titulo }}</p>
+
+  <button ion-button full color="dark" (click)="back()">REGRESAR</button>
+</ion-content>
